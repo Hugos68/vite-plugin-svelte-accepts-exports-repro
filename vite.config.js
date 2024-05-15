@@ -4,6 +4,10 @@ import { svelteTesting } from "@testing-library/svelte/vite";
 
 export default defineConfig({
 	plugins: [sveltekit(), svelteTesting()],
+	experimental: {
+		/* Uncomment to "fix" the issue */
+		// hmrPartialAccept: false,
+	},
 	test: {
 		include: ["src/**/*.{test,spec}.{js,ts}"],
 		environment: "jsdom",

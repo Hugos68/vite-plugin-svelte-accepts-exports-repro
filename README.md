@@ -31,3 +31,8 @@ TypeError: __vite_ssr_import_meta__.hot.acceptExports is not a function
    Start at  14:01:05
    Duration  1.08s (transform 230ms, setup 0ms, collect 0ms, tests 0ms, environment 413ms, prepare 91ms)
 ```
+
+# Steps for workaround
+
+1. Go to `vite.config.js`
+2. Uncomment the commented out `hmrPartialAccept: false`
